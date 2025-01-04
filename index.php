@@ -1,7 +1,33 @@
 <?php
 $nama = "Budi Saroso";
-
+$pengalamanKerja = [
+  [
+      'jabatan' => 'Operator Produksi',
+      'perusahaan' => 'PT Kiyokuni Indonesia',
+      'lokasi' => 'Bekasi, Indonesia',
+      'tahun_mulai' => 2020,
+      'tahun_selesai' => 2021,
+      'deskripsi' => '•	Menjalankan proses produksi dengan mengoperasikan Mesin Stamping Press H&F (Hitachi Zosen Fukui) yang berkapasitas 60 Ton untuk mencapai target GSPH sesuai dengan SOP yang telah ditetapkan perusahaan'
+  ],
+  [
+      'jabatan' => 'Operator Produksi',
+      'perusahaan' => 'PT Fuji Technica Indonesia',
+      'lokasi' => 'Karawang, Indonesia',
+      'tahun_mulai' => 2021,
+      'tahun_selesai' => 2023,
+      'deskripsi' => '•	Menjalankan proses produksi dengan mengoperasikan Mesin Stamping Press H&F (Hitachi Zosen Fukui) yang berkapasitas 1200 Ton untuk mencapai target GSPH sesuai dengan SOP yang telah ditetapkan perusahaan.'
+  ],
+  [
+      'jabatan' => 'Warehouse Control Delivery',
+      'perusahaan' => 'Indonesia Epson Industry ',
+      'lokasi' => 'Cikarang, Indonesia',
+      'tahun_mulai' => 2024,
+      'tahun_selesai' => 'saat ini',
+      'deskripsi' => 'Receiving barang yang berasal dari warehouse lalu mensupply barang ke produksi sesuai dengan line yang di tentukan.'
+  ]
+];
 ?>
+
 
 <!DOCTYPE html>
 <html lang="en">
@@ -131,55 +157,24 @@ $nama = "Budi Saroso";
             </div>
         </div>
         <div class="row">
-            <?php
-            // Data pengalaman kerja
-            $pengalamanKerja = [
-                [
-                    'jabatan' => 'Operator Produksi',
-                    'perusahaan' => 'PT Kiyokuni Indonesia',
-                    'lokasi' => 'Bekasi, Indonesia',
-                    'tahun_mulai' => 2020,
-                    'tahun_selesai' => 2021,
-                    'deskripsi' => '•	Menjalankan proses produksi dengan mengoperasikan Mesin Stamping Press H&F (Hitachi Zosen Fukui) yang berkapasitas 60 Ton untuk mencapai target GSPH sesuai dengan SOP yang telah ditetapkan perusahaan'
-                ],
-                [
-                    'jabatan' => 'Operator Produksi',
-                    'perusahaan' => 'PT Fuji Technica Indonesia',
-                    'lokasi' => 'Karawang, Indonesia',
-                    'tahun_mulai' => 2021,
-                    'tahun_selesai' => 2023,
-                    'deskripsi' => '•	Menjalankan proses produksi dengan mengoperasikan Mesin Stamping Press H&F (Hitachi Zosen Fukui) yang berkapasitas 1200 Ton untuk mencapai target GSPH sesuai dengan SOP yang telah ditetapkan perusahaan.'
-                ],
-                [
-                    'jabatan' => 'Warehouse Control Delivery',
-                    'perusahaan' => 'Indonesia Epson Industry ',
-                    'lokasi' => 'Cikarang, Indonesia',
-                    'tahun_mulai' => 2024,
-                    'tahun_selesai'=> 'saat ini',
-                    'deskripsi' => 'Receiving barang yang berasal dari warehouse lalu mensupply barang ke produksi sesuai dengan line yang di tentukan.'
-                ]
-            ];
-
-            // Menampilkan data pengalaman kerja
-            foreach ($pengalamanKerja as $kerja) {
-                echo '<div class="col-md-4 mb-4">';
-                echo '<div class="card shadow-sm border-0">';
-                echo '<div class="card-body">';
-                echo '<div class="d-flex align-items-center mb-3">';
-                echo '<div class="icon me-3" style="font-size: 2rem; color: rgb(208, 236, 218);">';
-                echo '<i class="bi bi-briefcase-fill"></i>'; // Ikon briefcase
-                echo '</div>';
-                echo '<h5 class="card-title mb-0">' . htmlspecialchars($kerja['jabatan']) . '</h5>';
-                echo '</div>';
-                echo '<p class="text-muted mb-1"><strong>Perusahaan:</strong> ' . htmlspecialchars($kerja['perusahaan']) . '</p>';
-                echo '<p class="text-muted mb-1"><strong>Lokasi:</strong> ' . htmlspecialchars($kerja['lokasi']) . '</p>';
-                echo '<p class="text-muted mb-1"><strong>Durasi:</strong> ' . htmlspecialchars($kerja['tahun_mulai']) . ' - ' . htmlspecialchars($kerja['tahun_selesai']) . '</p>';
-                echo '<p class="text-muted"><strong>Deskripsi:</strong> ' . htmlspecialchars($kerja['deskripsi']) . '</p>';
-                echo '</div>';
-                echo '</div>';
-                echo '</div>';
-            }
-            ?>
+            <?php foreach ($pengalamanKerja as $kerja): ?>
+              <div class="col-md-4 mb-4">
+                <div class="card shadow-sm border-0">
+                  <div class="card-body">
+                    <div class="d-flex align-items-center mb-3">
+                    <div class="icon me-3" style="font-size: 2rem; color: rgb(208, 236, 218);">
+                      <i class="bi bi-briefcase-fill"></i>
+                    </div>
+                    <h5 class="card-title mb-0"><?= $kerja['jabatan']; ?></h5>
+                    </div>
+                    <p class="text-muted mb-1"><strong>Perusahaan:</strong> <?= $kerja['perusahaan']; ?></p>
+                    <p class="text-muted mb-1"><strong>Lokasi:</strong> <?= $kerja['lokasi']; ?></p>
+                    <p class="text-muted mb-1"><strong>Durasi:</strong> <?= $kerja['tahun_mulai'] . ' - ' . $kerja['tahun_selesai']; ?></p>
+                    <p class="text-muted"><strong>Deskripsi:</strong> <?= $kerja['deskripsi']; ?></p>
+                  </div>
+                </div>
+              </div>
+            <?php endforeach ?>
         </div>
     </div>
 </section>
@@ -207,20 +202,20 @@ $nama = "Budi Saroso";
                 ['nama' => 'UI/UX Design', 'tingkat' => 70],
             ];
 
-            // Menampilkan data keahlian
-            foreach ($keahlian as $skill) {
-                echo '<div class="col-md-6 mb-4">';
-                echo '<h5 class="fw-bold">' . htmlspecialchars($skill['nama']) . '</h5>';
-                echo '<div class="progress" style="height: 25px;">';
-                echo '<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" ';
-                echo 'style="width: ' . htmlspecialchars($skill['tingkat']) . '%; background-color: rgb(208, 236, 218);" ';
-                echo 'aria-valuenow="' . htmlspecialchars($skill['tingkat']) . '" aria-valuemin="0" aria-valuemax="100">';
-                echo htmlspecialchars($skill['tingkat']) . '%';
-                echo '</div>';
-                echo '</div>';
-                echo '</div>';
-            }
-            ?>
+// Menampilkan data keahlian
+foreach ($keahlian as $skill) {
+    echo '<div class="col-md-6 mb-4">';
+    echo '<h5 class="fw-bold">' . htmlspecialchars($skill['nama']) . '</h5>';
+    echo '<div class="progress" style="height: 25px;">';
+    echo '<div class="progress-bar progress-bar-striped progress-bar-animated" role="progressbar" ';
+    echo 'style="width: ' . htmlspecialchars($skill['tingkat']) . '%; background-color: rgb(208, 236, 218);" ';
+    echo 'aria-valuenow="' . htmlspecialchars($skill['tingkat']) . '" aria-valuemin="0" aria-valuemax="100">';
+    echo htmlspecialchars($skill['tingkat']) . '%';
+    echo '</div>';
+    echo '</div>';
+    echo '</div>';
+}
+?>
         </div>
     </div>
 </section>

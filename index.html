@@ -1,198 +1,534 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0"
-    />
-    <meta
-      name="description"
-      content="Portfolio website of Budi Saroso showcasing skills, projects, and work experiences."
-    />
-    <meta
-      name="keywords"
-      content="Portfolio, Budi Saroso, Photographer, Developer, Editor"
-    />
-    <meta
-      name="author"
-      content="Budi Saroso"
-    />
-    <title>Portfolio Budi Saroso</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Portofolio Budi Saroso</title>
     <link
       href="bootstrap/bootstrap-5.3.3-dist/css/bootstrap.min.css"
       rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
     />
-    <link
-      rel="stylesheet"
-      href="style.css"
-    />
+    <!-- my css  -->
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body id="home">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container-fluid">
-        <a
-          class="navbar-brand"
-          href="#"
-          >Budi Saroso</a
-        >
+    <!-- Navbar  -->
+    <nav
+      class="navbar navbar-expand-lg bg-body-tertiary shadow navbar fixed-top"
+    >
+      <div class="container">
+        <a class="navbar-brand" href="#">S A R O</a>
         <button
           class="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
         </button>
-        <div
-          class="collapse navbar-collapse"
-          id="navbarNav"
-        >
+        <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item">
-              <a
-                class="nav-link"
-                href="#about"
-                >About</a
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
               >
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link"
-                href="#education"
-                >Education</a
-              >
+              <a class="nav-link" href="#about">About</a>
             </li>
             <li class="nav-item">
-              <a
-                class="nav-link"
-                href="#projects"
-                >Projects</a
-              >
+              <a class="nav-link" href="#pengalaman-kerja">Pekerjaan</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects">Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">contact</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
+    <!-- akhir navbar -->
+    <!-- Jumbotron-->
+    <section class="jumbotron text-center">
+      <img src="img/FOTO WEB.jpg" alt="Budi Saroso" width="200" />
+      <h1 class="display-4">Budi Saroso</h1>
+      <p class="lead">Student | Street PhotoGrapher</p>
+      <hr class="my-4" />
+    </section>
+    <!-- akhir jumbotron -->
 
-    <!-- Header -->
-    <header class="bg-primary text-white text-center py-5">
+    <!-- about -->
+    <section id="about">
       <div class="container">
-        <h1>Welcome to My Portfolio</h1>
-        <p>Photographer | Developer | Editor</p>
-      </div>
-    </header>
-
-    <!-- About Section -->
-    <section
-      id="about"
-      class="py-5"
-    >
-      <div class="container">
-        <div class="row text-center mb-3">
+        <div class="row text-center mb-3 mt-3">
           <div class="col">
-            <h2>About Me</h2>
+            <h2>About me</h2>
           </div>
         </div>
         <div class="row text-center">
           <div class="col">
-            <p>Hello internet! My name is Budi Saroso. You can call me Saro. I was born in Rembang on January 21, 2002, and I am now 22 years old...</p>
+            <p>
+              Hello internet! My name is Budi Saroso, you can call me Saro. I
+              was born in Rembang on 21 January 2002 and now I'm 22 years old. I
+              am a 3rd semester informatics engineering student at Pelita Bangsa
+              University. I also have a hobby as a photographer and street
+              photography. I have work experience as a production operator for 2
+              years and 9 months. Now I'm looking for a job, and I hope you like
+              my portfolio.
+            </p>
           </div>
         </div>
       </div>
     </section>
+    <!-- akhir about -->
 
-    <!-- Education Section -->
-    <section
-      id="education"
-      class="py-5"
-    >
+    <!-- riwayat pendidikan -->
+    <section id="Pendidikan">
       <div class="container">
-        <div class="row text-center mb-3">
+        <div class="row text-center mb-3 mt-3">
           <div class="col">
-            <h2>Education History</h2>
+            <h2>Riwayat Pendidikan</h2>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4">
+          <!-- Kolom SD -->
+          <div class="col-md-4 mt-3">
             <div class="card shadow-sm border-primary w-100">
-              <div class="card-header bg-success text-white text-center">Elementary School</div>
+              <div
+                class="card-header text-center"
+                style="background-color: rgb(208, 236, 218); color: #000"
+              >
+                Sekolah Dasar (SD)
+              </div>
               <div class="card-body">
-                <p><strong>Institution:</strong> SD Negeri 15 Wanasari</p>
-                <p><strong>Year:</strong> 2008 - 2014</p>
+                <p><strong>Institusi:</strong> SD Negeri 15 Wanasari</p>
+                <p><strong>Tahun Masuk:</strong> 2008</p>
+                <p><strong>Tahun Lulus:</strong> 2014</p>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+
+          <!-- Kolom SMP -->
+          <div class="col-md-4 mt-3">
             <div class="card shadow-sm border-primary w-100">
-              <div class="card-header bg-success text-white text-center">Junior High School</div>
+              <div
+                class="card-header text-center"
+                style="background-color: rgb(208, 236, 218); color: #000"
+              >
+                Sekolah Menengah Pertama (SMP)
+              </div>
               <div class="card-body">
-                <p><strong>Institution:</strong> SMP Negeri 1 Rembang</p>
-                <p><strong>Year:</strong> 2014 - 2017</p>
+                <p><strong>Institusi:</strong> SMP Negeri 12 Tambun Selatan</p>
+                <p><strong>Tahun Masuk:</strong> 2014</p>
+                <p><strong>Tahun Lulus:</strong> 2017</p>
               </div>
             </div>
           </div>
-          <div class="col-md-4">
+
+          <!-- Kolom SMK -->
+          <div class="col-md-4 mt-3 mb-5">
             <div class="card shadow-sm border-primary w-100">
-              <div class="card-header bg-success text-white text-center">Senior High School</div>
+              <div
+                class="card-header text-center"
+                style="background-color: rgb(208, 236, 218); color: #000"
+              >
+                Sekolah Menengah Atas (SMK)
+              </div>
               <div class="card-body">
-                <p><strong>Institution:</strong> SMA Negeri 3 Rembang</p>
-                <p><strong>Year:</strong> 2017 - 2020</p>
+                <p><strong>Institusi:</strong> SMK Negeri 1 Cikarang Barat</p>
+                <p><strong>Tahun Masuk:</strong> 2017</p>
+                <p><strong>Tahun Lulus:</strong> 2020</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- Kolom Universitas-->
+          <div class="col-md-4 mt-3">
+            <div class="card shadow-sm border-primary w-100">
+              <div
+                class="card-header text-center"
+                style="background-color: rgb(208, 236, 218); color: #000"
+              >
+                Universitas
+              </div>
+              <div class="card-body">
+                <p><strong>Institusi:</strong> Universitas Pelita Bangsa</p>
+                <p><strong>Tahun Masuk:</strong> 2023</p>
+                <p><strong>Tahun Lulus:</strong> saat ini</p>
               </div>
             </div>
           </div>
         </div>
       </div>
     </section>
+    <!-- akhir riwayat pendidikan -->
 
-    <!-- Projects Section -->
-    <section
-      id="projects"
-      class="py-5"
-    >
+    <!-- pengalaman kerja -->
+    <section id="pengalaman-kerja" class="py-5">
       <div class="container">
-        <div class="row text-center mb-3">
+        <div class="row text-center mb-4">
           <div class="col">
-            <h2>My Projects</h2>
+            <h2 class="fw-bold">Pengalaman Kerja</h2>
+            <p class="text-muted">
+              Berikut adalah pengalaman kerja yang telah saya lalui.
+            </p>
           </div>
         </div>
         <div class="row">
-          <div class="col-md-4">
-            <a
-              href="https://www.tiktok.com/@budisarooooo/video/7376539513935449350"
-              target="_blank"
-            >
-              <div class="card shadow-sm">
-                <img
-                  src="img/Edit2.jpg"
-                  class="card-img-top"
-                  alt="Project 1"
-                />
-                <div class="card-body">
-                  <p>Make videos for KKP.</p>
+          <div class="col-md-4 mb-4">
+            <div class="card shadow-sm border-0">
+              <div class="card-body">
+                <div class="d-flex align-items-center mb-3">
+                  <div
+                    class="icon me-3"
+                    style="font-size: 2rem; color: rgb(208, 236, 218)"
+                  >
+                    <i class="bi bi-briefcase-fill"></i>
+                  </div>
+                  <h5 class="card-title mb-0">Operator Produksi</h5>
                 </div>
+                <p class="text-muted mb-1">
+                  <strong>Perusahaan:</strong> PT Kiyokuni Indonesia
+                </p>
+                <p class="text-muted mb-1">
+                  <strong>Lokasi:</strong> Bekasi, Indonesia
+                </p>
+                <p class="text-muted mb-1">
+                  <strong>Durasi:</strong> 2020 - 2021
+                </p>
+                <p class="text-muted">
+                  <strong>Deskripsi:</strong> Menjalankan proses produksi dengan
+                  mengoperasikan Mesin Stamping Press H&F (Hitachi Zosen Fukui)
+                  yang berkapasitas 60 Ton untuk mencapai target GSPH sesuai
+                  dengan SOP yang telah ditetapkan perusahaan.
+                </p>
               </div>
-            </a>
+            </div>
           </div>
-          <!-- Add more project cards here -->
+
+          <div class="col-md-4 mb-4">
+            <div class="card shadow-sm border-0">
+              <div class="card-body">
+                <div class="d-flex align-items-center mb-3">
+                  <div
+                    class="icon me-3"
+                    style="font-size: 2rem; color: rgb(208, 236, 218)"
+                  >
+                    <i class="bi bi-briefcase-fill"></i>
+                  </div>
+                  <h5 class="card-title mb-0">Operator Produksi</h5>
+                </div>
+                <p class="text-muted mb-1">
+                  <strong>Perusahaan:</strong> PT Fuji Technica Indonesia
+                </p>
+                <p class="text-muted mb-1">
+                  <strong>Lokasi:</strong> Karawang, Indonesia
+                </p>
+                <p class="text-muted mb-1">
+                  <strong>Durasi:</strong> 2021 - 2023
+                </p>
+                <p class="text-muted">
+                  <strong>Deskripsi:</strong> Menjalankan proses produksi dengan
+                  mengoperasikan Mesin Stamping Press H&F (Hitachi Zosen Fukui)
+                  yang berkapasitas 1200 Ton untuk mencapai target GSPH sesuai
+                  dengan SOP yang telah ditetapkan perusahaan.
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <div class="card shadow-sm border-0">
+              <div class="card-body">
+                <div class="d-flex align-items-center mb-3">
+                  <div
+                    class="icon me-3"
+                    style="font-size: 2rem; color: rgb(208, 236, 218)"
+                  >
+                    <i class="bi bi-briefcase-fill"></i>
+                  </div>
+                  <h5 class="card-title mb-0">Warehouse Control Delivery</h5>
+                </div>
+                <p class="text-muted mb-1">
+                  <strong>Perusahaan:</strong> Indonesia Epson Industry
+                </p>
+                <p class="text-muted mb-1">
+                  <strong>Lokasi:</strong> Cikarang, Indonesia
+                </p>
+                <p class="text-muted mb-1">
+                  <strong>Durasi:</strong> 2024 - saat ini
+                </p>
+                <p class="text-muted">
+                  <strong>Deskripsi:</strong> Receiving barang yang berasal dari
+                  warehouse lalu mensupply barang ke produksi sesuai dengan line
+                  yang ditentukan.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
+    <!-- akhir pengalaman kerja -->
 
-    <!-- Footer -->
-    <footer class="bg-success text-white text-center py-3">
+    <!-- Keahlian -->
+    <section id="keahlian" class="py-5">
+      <div class="container">
+        <div class="row text-center mb-4">
+          <div class="col">
+            <h2 class="fw-bold">Keahlian</h2>
+            <p class="text-muted">
+              Berikut adalah daftar keahlian yang saya kuasai dengan tingkat
+              kemampuan yang ditampilkan secara visual.
+            </p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <h5 class="fw-bold">HTML & CSS</h5>
+            <div class="progress" style="height: 25px">
+              <div
+                class="progress-bar progress-bar-striped progress-bar-animated"
+                role="progressbar"
+                style="width: 70%; background-color: rgb(208, 236, 218)"
+                aria-valuenow="70"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                70%
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <h5 class="fw-bold">JavaScript</h5>
+            <div class="progress" style="height: 25px">
+              <div
+                class="progress-bar progress-bar-striped progress-bar-animated"
+                role="progressbar"
+                style="width: 70%; background-color: rgb(208, 236, 218)"
+                aria-valuenow="70"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                70%
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <h5 class="fw-bold">PHP & MySQL</h5>
+            <div class="progress" style="height: 25px">
+              <div
+                class="progress-bar progress-bar-striped progress-bar-animated"
+                role="progressbar"
+                style="width: 80%; background-color: rgb(208, 236, 218)"
+                aria-valuenow="80"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                80%
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <h5 class="fw-bold">Bootstrap</h5>
+            <div class="progress" style="height: 25px">
+              <div
+                class="progress-bar progress-bar-striped progress-bar-animated"
+                role="progressbar"
+                style="width: 70%; background-color: rgb(208, 236, 218)"
+                aria-valuenow="70"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                70%
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <h5 class="fw-bold">Editing</h5>
+            <div class="progress" style="height: 25px">
+              <div
+                class="progress-bar progress-bar-striped progress-bar-animated"
+                role="progressbar"
+                style="width: 86%; background-color: rgb(208, 236, 218)"
+                aria-valuenow="86"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                86%
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <h5 class="fw-bold">UI/UX Design</h5>
+            <div class="progress" style="height: 25px">
+              <div
+                class="progress-bar progress-bar-striped progress-bar-animated"
+                role="progressbar"
+                style="width: 70%; background-color: rgb(208, 236, 218)"
+                aria-valuenow="70"
+                aria-valuemin="0"
+                aria-valuemax="100"
+              >
+                70%
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Akhir Keahlian -->
+
+    <!-- Project -->
+    <section id="projects">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col">
+            <h2>My Project</h2>
+          </div>
+        </div>
+        <div class="row mb-3 mt-3">
+          <div class="col">
+            <h3>Street Photography</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="img/DSC09965.JPG" class="card-img-top" alt="Foto1" />
+              <div class="card-body">
+                <p class="card-text">Photo I took in GBK Softball Stadium.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img src="img/DSC00571.JPG" class="card-img-top" alt="Foto2" />
+              <div class="card-body">
+                <p class="card-text">Photo I took in Kampung Bandan Station.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <img
+                src="img/2023_12_15_18_40_IMG_4179.JPG"
+                class="card-img-top"
+                alt="Foto3"
+              />
+              <div class="card-body">
+                <p class="card-text">Photo I took in Lebak Bulus.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row mb-3 mt-5">
+          <div class="col">
+            <h4>Videographer and Editor</h4>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card">
+              <img src="img/Edit1.jpg" class="card-img-top" alt="Foto4" />
+              <div class="card-body">
+                <p class="card-text">
+                  Editing video for Mr. Wawan from Bogasari.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <a
+                href="https://www.tiktok.com/@budisarooooo/video/7376539513935449350"
+                target="_blank"
+              >
+                <img src="img/Edit2.jpg" class="card-img-top" alt="Foto5" />
+                <div class="card-body">
+                  <p class="card-text">Make videos for KKP.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card">
+              <a
+                href="https://www.tiktok.com/@budisarooooo/video/7288857876599147781"
+                target="_blank"
+              >
+                <img src="img/Edit3.jpg" class="card-img-top" alt="Foto3" />
+                <div class="card-body">
+                  <p class="card-text">Make videos for college assignments.</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- akhir project -->
+
+    <!-- contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="row text-center mt-5">
+          <div class="col">
+            <h2>Contact Me</h2>
+          </div>
+        </div>
+        <div class="row justify-content-center">
+          <div class="col-md-8">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Email address</label
+              >
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="name@example.com"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label"
+                >Message</label
+              >
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- akhir contact -->
+
+    <!-- footer -->
+    <footer class="bg-success shadow text-white text-center">
       <p>
-        Created by
-        <a
-          href="https://www.instagram.com/budisarutobi/"
-          class="text-white"
+        Created By
+        <a href="https://www.instagram.com/budisarutobi/" class="text-white"
           >Budi Saroso</a
         >
       </p>
-      <p>Imagine people living in peace.</p>
+      <p>Imagine people living in peace</p>
     </footer>
-
-    <script src="bootstrap/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"></script>
+    <!-- akhir footer -->
+    <script
+      src="bootstrap/bootstrap-5.3.3-dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
