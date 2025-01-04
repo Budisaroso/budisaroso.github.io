@@ -1,0 +1,28 @@
+body {
+  min-height: 2000px;
+}
+
+.jumbotron {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: rgb(208, 236, 218);
+}
+#about {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+#pengalaman-kerja {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  background-color: rgb(208, 236, 218);
+}
+
+#projects {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+section {
+  padding-top: 5rem;
+}
