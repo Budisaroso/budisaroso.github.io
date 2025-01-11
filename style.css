@@ -6,6 +6,7 @@ body {
   padding-top: 5rem;
   padding-bottom: 5rem;
   background-color: rgb(208, 236, 218);
+  background-image: image('FOTOBG.jpg');
 }
 #about {
   padding-top: 5rem;
